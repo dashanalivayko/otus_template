@@ -8,7 +8,7 @@ const meta = {
     component: Button,
     tags: ['autodocs'],
     argTypes: {
-        backgroundColor: { control: 'color' },
+        backgroundColor: { control: 'color' }
     },
 } satisfies Meta<typeof Button>
 
@@ -19,7 +19,7 @@ type Story = StoryObj<typeof meta>
 export const Primary: Story = {
     args: {
         primary: true,
-        label: 'Button',
+        label: 'Primary',
     },
 }
 
@@ -32,13 +32,13 @@ export const Secondary: Story = {
 export const Large: Story = {
     args: {
         size: 'large',
-        label: 'Button',
+        label: 'Large button',
     },
 }
 
 export const Small: Story = {
     args: {
         size: 'small',
-        label: 'Button',
+        label: 'Small button',
     },
 }
